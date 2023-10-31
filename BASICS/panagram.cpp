@@ -9,7 +9,7 @@ The first line contains a single integer n (1 ≤ n ≤ 100) — the num
 
 The second line contains the string. The string consists only of uppercase and lowercase Latin letters.
 
-OutputTheQuickBrownFoxJumpsOverTheLazyDog
+Output
 Output "YES", if the string is a pangram and "NO" otherwise.*/
 
 #include<bits/stdc++.h>
