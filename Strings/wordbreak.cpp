@@ -14,11 +14,11 @@ using namespace std;
 
                 //         for(int i=1;i<=n;i++){
                 //             if(find(wordDict.begin() , wordDict.end() , s.substr(0,i))!=wordDict.end()){
-                //                 //find() - find(input_iterator first, input_iterator last, const T& value);
-                //                     //If the value is found in the sequence, the iterator to its position is returned.
-                //                     //If the value is not found, the iterator to the last position is returned.
-                //                 //substr() - string substr (size_t pos, size_t len);
-                //                     // It returns a string object.
+                                //                 //find() - find(input_iterator first, input_iterator last, const T& value);
+                                //                     //If the value is found in the sequence, the iterator to its position is returned.
+                                //                     //If the value is not found, the iterator to the last position is returned.
+                                //                 //substr() - string substr (size_t pos, size_t len);
+                                //                     // It returns a string object.
                 //                 if(wordBreak(s.substr(i) , wordDict)){
                 //                     return true;
                 //                 }
