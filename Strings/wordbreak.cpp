@@ -35,32 +35,37 @@ using namespace std;
 
 // dp memoization
 
-            // bool helper(int ind , string s , vector<string>& wordDict,int n , vector<int>& dp){
-            //         if(ind==s.size()){
-            //             return true;
-            //         }
-            //         if(dp[ind]!=-1){
-            //             return dp[ind];
-            //         }
+            bool helper(int ind , string s , vector<string>& wordDict,int n , vector<int>& dp){
+                    if(ind==s.size()){
+                        return true;
+                    }
+                    if(dp[ind]!=-1){
+                        return dp[ind];
+                    }
 
-            //         for(int i=ind; i<n;i++){
-            //             if(find(wordDict.begin() , wordDict.end() , s.substr(ind,i-ind+1)) != wordDict.end()){
-            //                 if(helper(i+1 , s,wordDict , n ,dp)){
-            //                     return dp[ind]=true;
-            //                 }
-            //             }
-            //         }
-            //         return dp[ind] =false;
-            //     }
-            // bool wordBreak(string s, vector<string>& wordDict) {
-            //     int n = s.size();
-            //     vector<int> dp(n+1,-1);
-            //     return helper(0,s,wordDict,n,dp);
-            // }
+                    for(int i=ind; i<n;i++){
+                        if(find(wordDict.begin() , wordDict.end() , s.substr(ind,i-ind+1)) != wordDict.end()){
+                            if(helper(i+1 , s,wordDict , n ,dp)){
+                                return dp[ind]=true;
+                            }
+                        }
+                    }
+                    return dp[ind] =false;
+                }
+            int  main() {
+                string s= "leetcode";
+                vector<string> wordDict={"leet","code"};
+                int n = s.size();
+                vector<int> dp(n+1,-1);
+                cout<< helper(0,s,wordDict,n,dp);
+                for(int i=0;i<dp.size();i++){
+                    cout<<i<<" " <<dp[i]<<"\n";
+                }
+            }
 
-int main(){
-    string s = "leetsncode";
-    vector<string> wordDict= {"leet","leetn","code"};
-    // cout<<wordBreak(s,wordDict);
+// int main(){
+//     string s = "leetsncode";
+//     vector<string> wordDict= {"leet","leetn","code"};
+//     // cout<<wordBreak(s,wordDict);
                     
-}
+// }

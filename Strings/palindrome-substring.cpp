@@ -56,5 +56,6 @@ int main(){
     temp = str;
     reverse(temp.begin(),temp.end());
     cout<<temp;
-    cout<<lcsubstring(str,temp);
+    
+    cout<<"\n"<<lcsubstring(str,temp);
 }

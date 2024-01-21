@@ -4,6 +4,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//similar to fibonacci
 int climbingstairs(int ind , vector<int>& dp){
     if(ind<=1){ 
         return ind;     

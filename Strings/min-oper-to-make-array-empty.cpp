@@ -28,7 +28,7 @@ int main(){
         }
         else if(it.second%3==1 || it.second%3==2){
             count += ((it.second/3)+1);
-            // why +1  say it.second = 4  , we will get it.second%3=1 (4 = 3+1)
+            // why +1  say it.second = 4  , we will get it.second%3=1 (4=3+1)
         }
         else if(it.second%2==0){
             count += it.second/2;
